@@ -1,9 +1,8 @@
 #  RippleBeam
-[RippleBeam Guide](https://confluence.sd.apple.com/display/AFD/RippleBeam)
 
 📡 RippleBeam – macOS Diagnostic & Firmware Toolkit
 
-RippleBeam is a macOS-based all-in-one firmware and diagnostics tool built for Apple internal use. It provides a powerful interface for engineering (EE), test (TE), and CM teams to interact with DUTs via serial ports, perform firmware updates, analyze logs, and automate Radar-based workflows.
+RippleBeam is a macOS-based all-in-one firmware and diagnostics tool built for FW engineer use. It provides a powerful interface for software engineering, test, and coreos teams to interact with DUTs via serial ports, perform firmware updates, analyze logs, and automate firmware-based workflows.
 
 ⸻
 
@@ -27,7 +26,7 @@ RippleBeam is a macOS-based all-in-one firmware and diagnostics tool built for A
 	•	Auto-download .tgz from Radar, extract .uarp, rename and place in correct path
 	•	Supports:
 	•	Standard EB Restore
-	•	Case-product simplified flashing (BLE / STM32 / R2 / All)
+	•	Case-product simplified flashing
 	•	Auto-fills --target= using ft version case
 
 📊 Dashboard
@@ -50,10 +49,9 @@ RippleBeam is a macOS-based all-in-one firmware and diagnostics tool built for A
 ⸻
 
 📦 Installation
-	1.	Clone or download the app from rdar://150989161
-	2.	Before first launch, run the embedded python3.11.pkg installer (inside /Resources)
+	1.	Before first launch, run the embedded python3.11.pkg installer (inside /Resources)
     If Python 3.11 is already installed on your machine, you may skip this step.
-	3.	Launch the app and grant serial port permissions when prompted.
+	2.	Launch the app and grant serial port permissions when prompted.
 
 ⸻
 
@@ -78,7 +76,6 @@ RippleBeam is a macOS-based all-in-one firmware and diagnostics tool built for A
 	•	Built using SwiftUI + Combine
 	•	Serial I/O via custom SerialPort class (ORSSerial-based)
 	•	AI summary powered by LLM + custom structured parser
-	•	Radar integration uses Apple internal Radar API and Kerberos tokens
 	•	Fully sandboxed with bookmarkData support for file persistence
 
 ⸻
@@ -104,29 +101,6 @@ To propose changes, create a PR under the debug/* branch and ensure you test the
 │   ├── ai.imageset
 │   ├── AppIcon.appiconset
 │   └── Contents.json
-├── audiofactorydiagtools
-│   ├── 3.11
-│   ├── ai
-│   ├── astris_script
-│   ├── CaseEB
-│   ├── config
-│   ├── diagsterm
-│   ├── doc
-│   ├── download
-│   ├── goldrestore_b747_EVT
-│   ├── goldrestore_durant
-│   ├── libusb-1.0.26
-│   ├── Makefile
-│   ├── personalize_fw
-│   ├── README
-│   ├── schema.json
-│   ├── scripts
-│   ├── Sentinel
-│   ├── sequencer
-│   ├── syscfg_migrate
-│   ├── test_suites
-│   ├── tools
-│   └── utilities
 ├── bot.swift
 ├── CodeEditor.swift
 ├── Console.swift
