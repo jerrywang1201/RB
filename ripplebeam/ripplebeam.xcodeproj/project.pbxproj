@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15281B902C63604900EDE55C /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15281B8F2C63604900EDE55C /* Logging.swift */; };
+		156654F72C461A6600DC1730 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156654F62C461A6600DC1730 /* Dashboard.swift */; };
+		156654FD2C4764C200DC1730 /* CustomViewClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156654FC2C4764C200DC1730 /* CustomViewClasses.swift */; };
+		156655002C4903B000DC1730 /* FilePicker in Frameworks */ = {isa = PBXBuildFile; productRef = 156654FF2C4903B000DC1730 /* FilePicker */; };
+		156655022C490D4B00DC1730 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156655012C490D4B00DC1730 /* Utils.swift */; };
+		1579A8032C743A5E0067A6C6 /* Console.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1579A8022C743A5E0067A6C6 /* Console.swift */; };
+		1579A80A2C758CFD0067A6C6 /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1579A8092C758CFD0067A6C6 /* Schema.swift */; };
+		1579A8102C7D7A140067A6C6 /* SerialPort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1579A80F2C7D7A140067A6C6 /* SerialPort.swift */; };
+		1579A8122C7ED6740067A6C6 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1579A8112C7ED6740067A6C6 /* Settings.swift */; };
+		1579A8162C804EB00067A6C6 /* Terminal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1579A8152C804EB00067A6C6 /* Terminal.swift */; };
+		1579A8182C815A760067A6C6 /* Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1579A8172C815A760067A6C6 /* Debug.swift */; };
+		1579A81B2C86D14A0067A6C6 /* SplitView in Frameworks */ = {isa = PBXBuildFile; productRef = 1579A81A2C86D14A0067A6C6 /* SplitView */; };
+		1579A81E2C86F3ED0067A6C6 /* CodeEditorView in Frameworks */ = {isa = PBXBuildFile; productRef = 1579A81D2C86F3ED0067A6C6 /* CodeEditorView */; };
+		1579A8202C86F3ED0067A6C6 /* LanguageSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 1579A81F2C86F3ED0067A6C6 /* LanguageSupport */; };
+		1579A8222C86F4260067A6C6 /* CodeEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1579A8212C86F4260067A6C6 /* CodeEditor.swift */; };
+		15CA1EC12C8A9FF00054A453 /* Zip in Frameworks */ = {isa = PBXBuildFile; productRef = 15CA1EC02C8A9FF00054A453 /* Zip */; };
+		15CA1EC32C8C20F80054A453 /* Plot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CA1EC22C8C20F80054A453 /* Plot.swift */; };
+		15E21E882C8EA27A00E095C8 /* CSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E21E872C8EA27A00E095C8 /* CSV.swift */; };
+		15F476082C451F22007B1ABC /* ripplebeamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F476072C451F22007B1ABC /* ripplebeamApp.swift */; };
+		15F4760A2C451F22007B1ABC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F476092C451F22007B1ABC /* ContentView.swift */; };
+		15F4761E2C451FDE007B1ABC /* ORSSerial in Frameworks */ = {isa = PBXBuildFile; productRef = 15F4761D2C451FDE007B1ABC /* ORSSerial */; };
+		15F476202C452014007B1ABC /* Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F4761F2C452014007B1ABC /* Control.swift */; };
+		CD4A6A152DF1CD8D00FFF70F /* python-stdlib in Resources */ = {isa = PBXBuildFile; fileRef = CD4A6A142DF1CD8D00FFF70F /* python-stdlib */; };
+		CD4A6A172DF1D1F100FFF70F /* grassninja in Resources */ = {isa = PBXBuildFile; fileRef = CD4A6A162DF1D1F100FFF70F /* grassninja */; };
+		CD64D81C2DF12CFF00DF9D49 /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = CD64D81B2DF12CFF00DF9D49 /* PythonKit */; };
+		CD64D81E2DF12F1E00DF9D49 /* Python.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD64D81D2DF12F1E00DF9D49 /* Python.xcframework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		15281B8F2C63604900EDE55C /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+		156654F62C461A6600DC1730 /* Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
+		156654FC2C4764C200DC1730 /* CustomViewClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewClasses.swift; sourceTree = "<group>"; };
+		156655012C490D4B00DC1730 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		1579A8022C743A5E0067A6C6 /* Console.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Console.swift; sourceTree = "<group>"; };
+		1579A8092C758CFD0067A6C6 /* Schema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schema.swift; sourceTree = "<group>"; };
+		1579A80F2C7D7A140067A6C6 /* SerialPort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialPort.swift; sourceTree = "<group>"; };
+		1579A8112C7ED6740067A6C6 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		1579A8152C804EB00067A6C6 /* Terminal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Terminal.swift; sourceTree = "<group>"; };
+		1579A8172C815A760067A6C6 /* Debug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debug.swift; sourceTree = "<group>"; };
+		1579A8212C86F4260067A6C6 /* CodeEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeEditor.swift; sourceTree = "<group>"; };
+		15CA1EC22C8C20F80054A453 /* Plot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plot.swift; sourceTree = "<group>"; };
+		15E21E872C8EA27A00E095C8 /* CSV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSV.swift; sourceTree = "<group>"; };
+		15F476042C451F22007B1ABC /* ripplebeam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ripplebeam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		15F476072C451F22007B1ABC /* ripplebeamApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ripplebeamApp.swift; sourceTree = "<group>"; };
+		15F476092C451F22007B1ABC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		15F4760B2C451F23007B1ABC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		15F4760E2C451F23007B1ABC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		15F476102C451F23007B1ABC /* ripplebeam.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ripplebeam.entitlements; sourceTree = "<group>"; };
+		15F4761F2C452014007B1ABC /* Control.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Control.swift; sourceTree = "<group>"; };
+		CD4A6A122DF1C95700FFF70F /* python-stdlib */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "python-stdlib"; sourceTree = "<group>"; };
+		CD4A6A142DF1CD8D00FFF70F /* python-stdlib */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "python-stdlib"; path = "../../../../Users/jialongwangsmacbookpro16/ripplebeam/Resources/python-stdlib"; sourceTree = "<group>"; };
+		CD4A6A162DF1D1F100FFF70F /* grassninja */ = {isa = PBXFileReference; lastKnownFileType = folder; path = grassninja; sourceTree = "<group>"; };
+		CD64D81D2DF12F1E00DF9D49 /* Python.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Python.xcframework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15F476012C451F22007B1ABC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15CA1EC12C8A9FF00054A453 /* Zip in Frameworks */,
+				156655002C4903B000DC1730 /* FilePicker in Frameworks */,
+				15F4761E2C451FDE007B1ABC /* ORSSerial in Frameworks */,
+				CD64D81E2DF12F1E00DF9D49 /* Python.xcframework in Frameworks */,
+				1579A81B2C86D14A0067A6C6 /* SplitView in Frameworks */,
+				1579A8202C86F3ED0067A6C6 /* LanguageSupport in Frameworks */,
+				CD64D81C2DF12CFF00DF9D49 /* PythonKit in Frameworks */,
+				1579A81E2C86F3ED0067A6C6 /* CodeEditorView in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15F475FB2C451F22007B1ABC = {
+			isa = PBXGroup;
+			children = (
+				CD4A6A162DF1D1F100FFF70F /* grassninja */,
+				CD4A6A122DF1C95700FFF70F /* python-stdlib */,
+				CD4A6A142DF1CD8D00FFF70F /* python-stdlib */,
+				15F476062C451F22007B1ABC /* ripplebeam */,
+				15F476052C451F22007B1ABC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		15F476052C451F22007B1ABC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15F476042C451F22007B1ABC /* ripplebeam.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		15F476062C451F22007B1ABC /* ripplebeam */ = {
+			isa = PBXGroup;
+			children = (
+				CD8741072DF03D0C00A8CF31 /* scripts */,
+				15F476092C451F22007B1ABC /* ContentView.swift */,
+				15F4761F2C452014007B1ABC /* Control.swift */,
+				1579A8022C743A5E0067A6C6 /* Console.swift */,
+				15F476072C451F22007B1ABC /* ripplebeamApp.swift */,
+				15F4760B2C451F23007B1ABC /* Assets.xcassets */,
+				15F476102C451F23007B1ABC /* ripplebeam.entitlements */,
+				15F4760D2C451F23007B1ABC /* Preview Content */,
+				156654F62C461A6600DC1730 /* Dashboard.swift */,
+				156654FC2C4764C200DC1730 /* CustomViewClasses.swift */,
+				156655012C490D4B00DC1730 /* Utils.swift */,
+				15281B8F2C63604900EDE55C /* Logging.swift */,
+				1579A8092C758CFD0067A6C6 /* Schema.swift */,
+				1579A80F2C7D7A140067A6C6 /* SerialPort.swift */,
+				1579A8112C7ED6740067A6C6 /* Settings.swift */,
+				1579A8152C804EB00067A6C6 /* Terminal.swift */,
+				1579A8172C815A760067A6C6 /* Debug.swift */,
+				1579A8212C86F4260067A6C6 /* CodeEditor.swift */,
+				15CA1EC22C8C20F80054A453 /* Plot.swift */,
+				15E21E872C8EA27A00E095C8 /* CSV.swift */,
+				CD64D81D2DF12F1E00DF9D49 /* Python.xcframework */,
+			);
+			path = ripplebeam;
+			sourceTree = "<group>";
+		};
+		15F4760D2C451F23007B1ABC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				15F4760E2C451F23007B1ABC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CD8741072DF03D0C00A8CF31 /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = scripts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		15F476032C451F22007B1ABC /* ripplebeam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15F476132C451F23007B1ABC /* Build configuration list for PBXNativeTarget "ripplebeam" */;
+			buildPhases = (
+				15F476002C451F22007B1ABC /* Sources */,
+				15F476012C451F22007B1ABC /* Frameworks */,
+				CD6441B92DF1348500DF9D49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ripplebeam;
+			packageProductDependencies = (
+				15F4761D2C451FDE007B1ABC /* ORSSerial */,
+				156654FF2C4903B000DC1730 /* FilePicker */,
+				1579A81A2C86D14A0067A6C6 /* SplitView */,
+				1579A81D2C86F3ED0067A6C6 /* CodeEditorView */,
+				1579A81F2C86F3ED0067A6C6 /* LanguageSupport */,
+				15CA1EC02C8A9FF00054A453 /* Zip */,
+				CD64D81B2DF12CFF00DF9D49 /* PythonKit */,
+			);
+			productName = ripplebeam;
+			productReference = 15F476042C451F22007B1ABC /* ripplebeam.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		15F475FC2C451F22007B1ABC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1700;
+				TargetAttributes = {
+					15F476032C451F22007B1ABC = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 15F475FF2C451F22007B1ABC /* Build configuration list for PBXProject "ripplebeam" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 15F475FB2C451F22007B1ABC;
+			packageReferences = (
+				15F4761C2C451FDE007B1ABC /* XCRemoteSwiftPackageReference "ORSSerialPort" */,
+				156654FE2C4903B000DC1730 /* XCRemoteSwiftPackageReference "FilePicker" */,
+				1579A8192C86D14A0067A6C6 /* XCRemoteSwiftPackageReference "SplitView" */,
+				1579A81C2C86F3ED0067A6C6 /* XCRemoteSwiftPackageReference "CodeEditorView" */,
+				15CA1EBF2C8A9FF00054A453 /* XCRemoteSwiftPackageReference "Zip" */,
+				CD64D81A2DF12CFF00DF9D49 /* XCRemoteSwiftPackageReference "PythonKit" */,
+			);
+			productRefGroup = 15F476052C451F22007B1ABC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				15F476032C451F22007B1ABC /* ripplebeam */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD6441B92DF1348500DF9D49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD4A6A172DF1D1F100FFF70F /* grassninja in Resources */,
+				CD4A6A152DF1CD8D00FFF70F /* python-stdlib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		15F476002C451F22007B1ABC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1579A8102C7D7A140067A6C6 /* SerialPort.swift in Sources */,
+				1579A8162C804EB00067A6C6 /* Terminal.swift in Sources */,
+				1579A80A2C758CFD0067A6C6 /* Schema.swift in Sources */,
+				1579A8032C743A5E0067A6C6 /* Console.swift in Sources */,
+				1579A8122C7ED6740067A6C6 /* Settings.swift in Sources */,
+				156654F72C461A6600DC1730 /* Dashboard.swift in Sources */,
+				1579A8222C86F4260067A6C6 /* CodeEditor.swift in Sources */,
+				15281B902C63604900EDE55C /* Logging.swift in Sources */,
+				156655022C490D4B00DC1730 /* Utils.swift in Sources */,
+				15F4760A2C451F22007B1ABC /* ContentView.swift in Sources */,
+				15F476202C452014007B1ABC /* Control.swift in Sources */,
+				15F476082C451F22007B1ABC /* ripplebeamApp.swift in Sources */,
+				15E21E882C8EA27A00E095C8 /* CSV.swift in Sources */,
+				156654FD2C4764C200DC1730 /* CustomViewClasses.swift in Sources */,
+				15CA1EC32C8C20F80054A453 /* Plot.swift in Sources */,
+				1579A8182C815A760067A6C6 /* Debug.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		15F476112C451F23007B1ABC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		15F476122C451F23007B1ABC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		15F476142C451F23007B1ABC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = ripplebeam/ripplebeam.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"ripplebeam/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Embedded2",
+					"$(inherited)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ripplebeam/Embedded\\ 3/python-stdlib/config-3.11-darwin",
+					"$(PROJECT_DIR)/ripplebeam/Embedded\\ 3/Versions/3.11/lib/python3.11/config-3.11-darwin",
+					"$(PROJECT_DIR)/ripplebeam/Embedded\\ 3/python-stdlib/config-3.11-darwin",
+					"$(PROJECT_DIR)/ripplebeam/Embedded\\ 3/Versions/3.11",
+					"$(PROJECT_DIR)/ripplebeam/Embedded\\ 3/Versions/3.11/lib",
+					"$(PROJECT_DIR)/ripplebeam/Embedded\\ 3/Versions/3.11/lib/python3.11/config-3.11-darwin",
+					"$(PROJECT_DIR)/ripplebeam/Embedded/Versions/3.11/lib/python3.11/config-3.11-darwin",
+					"$(PROJECT_DIR)/ripplebeam/Embedded/python-stdlib/config-3.11-darwin",
+					"$(PROJECT_DIR)/ripplebeam/Embedded/Versions/3.11/lib",
+					"$(PROJECT_DIR)/ripplebeam/Embedded/Versions/3.11",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jerrywang.ripplebeam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		15F476152C451F23007B1ABC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = ripplebeam/ripplebeam.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"ripplebeam/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Embedded2",
+					"$(inherited)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ripplebeam/Embedded\\ 3/python-stdlib/config-3.11-darwin",
+					"$(PROJECT_DIR)/ripplebeam/Embedded\\ 3/Versions/3.11/lib/python3.11/config-3.11-darwin",
+					"$(PROJECT_DIR)/ripplebeam/Embedded\\ 3/python-stdlib/config-3.11-darwin",
+					"$(PROJECT_DIR)/ripplebeam/Embedded\\ 3/Versions/3.11",
+					"$(PROJECT_DIR)/ripplebeam/Embedded\\ 3/Versions/3.11/lib",
+					"$(PROJECT_DIR)/ripplebeam/Embedded\\ 3/Versions/3.11/lib/python3.11/config-3.11-darwin",
+					"$(PROJECT_DIR)/ripplebeam/Embedded/Versions/3.11/lib/python3.11/config-3.11-darwin",
+					"$(PROJECT_DIR)/ripplebeam/Embedded/python-stdlib/config-3.11-darwin",
+					"$(PROJECT_DIR)/ripplebeam/Embedded/Versions/3.11/lib",
+					"$(PROJECT_DIR)/ripplebeam/Embedded/Versions/3.11",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jerrywang.ripplebeam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15F475FF2C451F22007B1ABC /* Build configuration list for PBXProject "ripplebeam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15F476112C451F23007B1ABC /* Debug */,
+				15F476122C451F23007B1ABC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15F476132C451F23007B1ABC /* Build configuration list for PBXNativeTarget "ripplebeam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15F476142C451F23007B1ABC /* Debug */,
+				15F476152C451F23007B1ABC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		156654FE2C4903B000DC1730 /* XCRemoteSwiftPackageReference "FilePicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/markrenaud/FilePicker";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
+			};
+		};
+		1579A8192C86D14A0067A6C6 /* XCRemoteSwiftPackageReference "SplitView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stevengharris/SplitView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.5.3;
+			};
+		};
+		1579A81C2C86F3ED0067A6C6 /* XCRemoteSwiftPackageReference "CodeEditorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mchakravarty/CodeEditorView";
+			requirement = {
+				kind = exactVersion;
+				version = 0.12.0;
+			};
+		};
+		15CA1EBF2C8A9FF00054A453 /* XCRemoteSwiftPackageReference "Zip" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/marmelroy/Zip";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.2;
+			};
+		};
+		15F4761C2C451FDE007B1ABC /* XCRemoteSwiftPackageReference "ORSSerialPort" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/armadsen/ORSSerialPort.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.0;
+			};
+		};
+		CD64D81A2DF12CFF00DF9D49 /* XCRemoteSwiftPackageReference "PythonKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pvieito/PythonKit";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		156654FF2C4903B000DC1730 /* FilePicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 156654FE2C4903B000DC1730 /* XCRemoteSwiftPackageReference "FilePicker" */;
+			productName = FilePicker;
+		};
+		1579A81A2C86D14A0067A6C6 /* SplitView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1579A8192C86D14A0067A6C6 /* XCRemoteSwiftPackageReference "SplitView" */;
+			productName = SplitView;
+		};
+		1579A81D2C86F3ED0067A6C6 /* CodeEditorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1579A81C2C86F3ED0067A6C6 /* XCRemoteSwiftPackageReference "CodeEditorView" */;
+			productName = CodeEditorView;
+		};
+		1579A81F2C86F3ED0067A6C6 /* LanguageSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1579A81C2C86F3ED0067A6C6 /* XCRemoteSwiftPackageReference "CodeEditorView" */;
+			productName = LanguageSupport;
+		};
+		15CA1EC02C8A9FF00054A453 /* Zip */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 15CA1EBF2C8A9FF00054A453 /* XCRemoteSwiftPackageReference "Zip" */;
+			productName = Zip;
+		};
+		15F4761D2C451FDE007B1ABC /* ORSSerial */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 15F4761C2C451FDE007B1ABC /* XCRemoteSwiftPackageReference "ORSSerialPort" */;
+			productName = ORSSerial;
+		};
+		CD64D81B2DF12CFF00DF9D49 /* PythonKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD64D81A2DF12CFF00DF9D49 /* XCRemoteSwiftPackageReference "PythonKit" */;
+			productName = PythonKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 15F475FC2C451F22007B1ABC /* Project object */;
+}
