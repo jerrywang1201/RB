@@ -339,10 +339,7 @@ struct TerminalOutputView: View {
                     LazyVStack(alignment: .leading, spacing: 2) {
                        
                         ForEach(terminal.output) { line in
-                            Text(line.text)
-                                .foregroundColor(.green)
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                                .padding(4)
+                            TerminalLineView(line: line, terminal: terminal)
                                 .id(line.id)
                         }
                         
