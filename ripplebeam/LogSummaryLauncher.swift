@@ -83,19 +83,23 @@ struct LogSummaryView: View {
             try? logContent.write(toFile: logPath, atomically: true, encoding: .utf8)
             print("✅ [2] Wrote \(logContent.count) bytes to log")
 
-            logSummary = """
-            🛠️ Starting Log Diagnostics...
+            await MainActor.run {
+                logSummary = """
+                🛠️ Starting Log Diagnostics...
 
-            📄 Writing terminal log to: \(logPath)
-            ✅ Log content written: \(logContent.count) characters
+                📄 Writing terminal log to: \(logPath)
+                ✅ Log content written: \(logContent.count) characters
 
-            🚀 Running analysis script...
-            """
+                🚀 Running analysis script...
+                """
+            }
 
             let result = await runShellCapture(pyExe, arguments: [scriptPath, logPath])
 
-            logSummary += "\n✅ Script finished.\n\n"
-            logSummary += result.isEmpty ? "⚠️ No summary generated." : result
+            await MainActor.run {
+                logSummary += "\n✅ Script finished.\n\n"
+                logSummary += result.isEmpty ? "⚠️ No summary generated." : result
+            }
         }
     }
 
