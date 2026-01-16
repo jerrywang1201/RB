@@ -76,7 +76,9 @@ struct LogSummaryView: View {
 
     private func summarizeLog() {
         Task {
-            let logPath = "/tmp/terminal_log.txt"
+            let logPath = FileManager.default.temporaryDirectory
+                .appendingPathComponent("terminal_log_\(UUID().uuidString).txt")
+                .path
             print("📄 [1] Writing terminal log to: \(logPath)")
 
             let logContent = terminal.output.map(\.text).joined(separator: "\n")
