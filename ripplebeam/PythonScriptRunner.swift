@@ -25,24 +25,21 @@ class PythonScriptRunner {
         }
         process.environment = env
 
-        let stdoutPipe = Pipe()
-        let stderrPipe = Pipe()
-        process.standardOutput = stdoutPipe
-        process.standardError = stderrPipe
+        let outputPipe = Pipe()
+        process.standardOutput = outputPipe
+        process.standardError = outputPipe
 
         try process.run()
 
-        let stdoutData = stdoutPipe.fileHandleForReading.readDataToEndOfFile()
-        let stderrData = stderrPipe.fileHandleForReading.readDataToEndOfFile()
+        let outputData = outputPipe.fileHandleForReading.readDataToEndOfFile()
 
         process.waitUntilExit()
 
-        if let dataSub = dataSub {
-            if !stdoutData.isEmpty { dataSub.send(stdoutData) }
-            if !stderrData.isEmpty { dataSub.send(stderrData) }
+        if let dataSub, !outputData.isEmpty {
+            dataSub.send(outputData)
         }
 
-        let output = stdoutData + stderrData
+        let output = outputData
         guard process.terminationStatus == 0 else {
             throw NSError(domain: "PythonScriptRunner",
                           code: Int(process.terminationStatus),
