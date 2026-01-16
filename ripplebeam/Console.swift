@@ -227,16 +227,6 @@ struct ConsoleView: View {
 
     func insertAtCursor(text: String) {
         if let range = position.selections.first {
-            print(range.location, range.length)
-            if range.length == 0 {
-                model.command.insert(contentsOf: text,
-                                     at: model.command.index(model.command.startIndex, offsetBy: range.location))
-            }
-        } else {
-            model.command.insert(contentsOf: text,
-                                 at: model.command.startIndex)
-        }
-        if let range = position.selections.first {
             let offset = range.location
             let commandLength = model.command.count
 
@@ -247,6 +237,8 @@ struct ConsoleView: View {
                 // fallback: append to the end if index is out of bounds
                 model.command.append(contentsOf: text)
             }
+        } else {
+            model.command.insert(contentsOf: text, at: model.command.startIndex)
         }
     }
 
